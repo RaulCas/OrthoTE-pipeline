@@ -3,7 +3,6 @@ Pipeline for detecting putative orthologous TE insertions in assemblies of relat
 
 Dependencies:
 
-- Python
 - Biopython
-- NCBIblast
+- NCBI blast
 - bedtools
