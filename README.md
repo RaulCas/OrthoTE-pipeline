@@ -18,7 +18,7 @@
     
 ### Results:
 
--  Final_summary.txt --> List of all ortho_TE candidates, along with the length btween the two flank matches
+-  Final_summary.txt --> List of all ortho_TE candidates, along with the length between the two flank matches
 
 -  overlapping_annotation.txt --> List of ortho_TE candidates whose internal sequence overlaps with an annotated element (LTRharvest)
 
