@@ -15,5 +15,15 @@
 ### Usage: 
 
     bash OtrhoLTRpileline.sh flank_size annotation_file.gff
+    
+### Results:
+
+-  Final_summary.txt --> List of all ortho_TE candidates, along with the length btween the two flank matches
+
+-  overlapping_annotation.txt --> List of ortho_TE candidates whose internal sequence overlaps with an annotated element (LTRharvest)
+
+-  NON_overlapping_matching_repbase.txt -->  ortho_TE candidates that don't overlap with annotation, but show similarity to repbase elements (putative truncated elements)
+
+-  IGVfiles ---> In this folder you can find several files ready to display in IGV using the target species genome
 
 
