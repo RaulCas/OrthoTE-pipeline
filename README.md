@@ -18,11 +18,11 @@
     
 ### Results:
 
--  Final_summary.txt --> List of all ortho_TE candidates, along with the length between the two flank matches
+-  Final_summary.txt --> List of all ortho_TE candidates, along with the length between the two flank matches. (Identify empty elements were length > 100 bp)
 
 -  overlapping_annotation.txt --> List of ortho_TE candidates whose internal sequence overlaps with an annotated element (Full-length conserved elements)
 
--  NON_overlapping_matching_repbase.txt -->  ortho_TE candidates that don't overlap with annotation, but show similarity to repbase elements (putative truncated elements)
+-  NON_overlapping_matching_repbase.txt -->  ortho_TE candidates that don't overlap with annotation, but show similarity to repbase elements (putative truncated elements in the target species)
 
 -  IGVfiles ---> In this folder you can find several files ready to display in IGV using the target species genome
 
