@@ -18,7 +18,7 @@
     
 ### Results:
 
--  Final_summary.txt --> List of all ortho_TE candidates, along with the length between the two flank matches. (Identify empty elements were length > 100 bp)
+-  Final_summary.txt --> List of all ortho_TE candidates, along with the length between the two flank matches. (Identify empty elements were length < 100 bp)
 
 -  overlapping_annotation.txt --> List of ortho_TE candidates whose internal sequence overlaps with an annotated element (Full-length conserved elements)
 
