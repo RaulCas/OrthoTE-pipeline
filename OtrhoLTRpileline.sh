@@ -51,7 +51,7 @@ printf 'Extract flanks in fasta format..\n'
 
 printf 'Running blastn ..........................\n'
 
-# Run blastn against Species 2 -- only best hit are retrieved
+# Run blastn against Species 2 -- only best hits are retrieved
 
 blastn -task blastn -query Peach_LTR_flanks.fasta -db $almond_blastdb -evalue 0.0000000001 -out blast.out -outfmt 6 -max_target_seqs 1 -max_hsps 1 -num_threads 6;
 
@@ -59,7 +59,7 @@ printf 'Checking concordant matches ....................\n'
 
 # join both hits in one line and detect those mapping to the same scaffold under a reasonable length
 
-less blast.out | awk '{FS="_"} {print$1"_"$2}' | sort | uniq > LTR_unique_names.txt; # This is specific for Peach
+less blast.out | awk '{FS="_"} {print$1"_"$2}' | sort | uniq > LTR_unique_names.txt; 
 
 python $scripts_folder/parse_orthology.py > summary_hits.txt;
 
@@ -75,7 +75,7 @@ printf 'Continue with analysis ..\n'
 
 ################### STEP2: Analysis of OrthoLTR sites
 
-# make internal and flanks bedfiles
+# make internal and flank bedfiles
 
 less Final_summary.txt | awk '{print $2"\t"$4"\t"$5"\t"$1";"$7$8}' > orthoLTR_internal.bed;
 
@@ -85,7 +85,7 @@ less Final_summary.txt | awk '{print $2"\t"$5"\t"$6"\t"$1"_2"}' > orthoLTR_rflan
 
 cat orthoLTR_lflank.bed orthoLTR_rflank.bed | sort -k 1,1 -k2,2n > combined_flanks.bed;
 
-# Intersect with the corresponding soloLTR annotation:
+# Intersect internal sequences with the corresponding annotation (in this case SoloLTR):
 
 bedtools intersect -wa -F 0.7 -a orthoLTR_internal.bed -b $soloLTR_annot_almond > overlapping_annotation.txt;
 
