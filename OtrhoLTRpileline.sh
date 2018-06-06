@@ -87,9 +87,9 @@ cat orthoLTR_lflank.bed orthoLTR_rflank.bed | sort -k 1,1 -k2,2n > combined_flan
 
 # Intersect internal sequences with the corresponding annotation (in this case SoloLTR):
 
-bedtools intersect -wa -F 0.7 -a orthoLTR_internal.bed -b $soloLTR_annot_almond | sort | uniq > overlapping_annotation.txt;
+bedtools intersect -wa -F 0.7 -a orthoLTR_internal.bed -b $LTRharvest_annot_almond | sort | uniq > overlapping_annotation.txt;
 
-bedtools intersect -v -wa -F 0.7 -a orthoLTR_internal.bed -b $soloLTR_annot_almond | sort | uniq > NON_overlapping_annotation.bed;
+bedtools intersect -v -wa -F 0.7 -a orthoLTR_internal.bed -b $LTRharvest_annot_almond | sort | uniq > NON_overlapping_annotation.bed;
 
 # Classfy noempty: extract fasta and Blastx vs REPBASE database  
 
