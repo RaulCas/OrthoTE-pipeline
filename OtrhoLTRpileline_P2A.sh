@@ -18,7 +18,6 @@ repbase_db="/home/rcastanera/Documents/localizaTE/testdb"                      #
 peach_genome_file="/home/rcastanera/Documents/CRAG/Anotation/genomefilesbed/peach_genome.txt"  # bedtools genome file, NOT fasta genome file
 peach_fasta_file="/home/rcastanera/Documents/CRAG/Anotation/genomes/Prunus_persica_V2-pseudo.fa"
 LTRharvest_annot_peach="/home/rcastanera/Documents/CRAG/Anotation/TE_orthology_files/peach_setA_harvest_170529_TE_orthology.gff"
-soloLTR_annot_peach="/home/rcastanera/Documents/CRAG/Anotation/ltr/soloLTR/solo_almond_noSetB_notNested.MERGE.CLUSTERS.bed"
 peach_blastdb="/home/rcastanera/Documents/CRAG/Anotation/Blast_db/Ppersica"
 
 
@@ -27,7 +26,6 @@ peach_blastdb="/home/rcastanera/Documents/CRAG/Anotation/Blast_db/Ppersica"
 almond_genome_file="/home/rcastanera/Documents/CRAG/Anotation/genomefilesbed/Pdulcis_genomefile.txt" # bedtools genome file, NOT fasta genome file
 almond_fasta_file="/home/rcastanera/Documents/CRAG/Anotation/genomes/pdulcis7.scaffolds.fa"
 LTRharvest_annot_almond="/home/rcastanera/Documents/CRAG/Anotation/TE_orthology_files/almond_setA_harvest_170529_TEorthology.gff"
-soloLTR_annot_almond="/home/rcastanera/Documents/CRAG/Anotation/ltr/soloLTR/solo_almond_noSetB_notNested.MERGE.CLUSTERS.bed"
 almond_blastdb="/home/rcastanera/Documents/CRAG/Anotation/Blast_db/Pdulcis"
 
 #---------------------------------------- PROGRAM -------------------------------------------------------------
