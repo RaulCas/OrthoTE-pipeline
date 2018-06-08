@@ -1,9 +1,9 @@
-#========================================================================
-# Tool to detect putative orthologous insertions between two genomes
+#========================================================================================================
+# Tool to detect putative orthologous insertions between two genomes (species 1 is taken as reference)
 # 
 # USAGE: OtrhoLTRpileline.sh flank_size ggf_file
 #
-#========================================================================
+#==========================================================================================================
 
 
 # ------------------------------------ Set this BEFORE running the pipeline ---------------------------------
