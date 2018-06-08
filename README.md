@@ -26,4 +26,6 @@
 
 -  IGVfiles ---> In this folder you can find several files ready to display in IGV using the target species genome
 
+-  parse_output_P2A.sh can be used to further classify the output (open the script and change the paths if neccesary)
+
 
