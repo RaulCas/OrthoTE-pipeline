@@ -14,7 +14,7 @@
 
 ### Usage: 
 
-    bash OtrhoLTRpileline.sh flank_size annotation_file.gff
+    bash OtrhoLTRpileline_P2A.sh flank_size annotation_file.gff
     
 ### Results:
 
