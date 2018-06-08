@@ -83,7 +83,7 @@ less Final_summary.txt | awk '{print $2"\t"$5"\t"$6"\t"$1"_2"}' > orthoLTR_rflan
 
 cat orthoLTR_lflank.bed orthoLTR_rflank.bed | sort -k 1,1 -k2,2n > combined_flanks.bed;
 
-# Intersect with the corresponding soloLTR annotation:
+# Intersect with the corresponding LTRharvest annotation:
 
 bedtools intersect -wa -F 0.7 -a orthoLTR_internal.bed -b $LTRharvest_annot_almond | sort | uniq > overlapping_annotation.txt;
 
